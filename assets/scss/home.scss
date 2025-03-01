@@ -3,21 +3,73 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-     font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 /* Body Styling */
 body {
     background-color: #FFF;
     color: #333;
-  font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 
-#banner_main{ text-align: center;  
-    .b_m_heading{ font-size: 92px; line-height: 138px; letter-spacing: 0.15rem; color: $base-color;   }
-    .b_m_s_heading{
-         color: $base-color;font-size: 54px; line-height: 81px; letter-spacing: 0.25rem;
+#banner_main {
+    
+    position: relative; 
+    text-align: center;
+    background-image: url(../images/bg_banner.png); background-position: center bottom; 
+    padding: 4rem 0rem 2rem 0rem; 
+
+    .b_m_heading {
+        font-size: 92px;
+        line-height: 138px;
+        letter-spacing: 0.75rem;
+        color: $base-color;
+    }
+
+    .b_m_s_heading {
+        color: $base-color;
+        font-size: 52px;
+        line-height: 81px;
+        letter-spacing: 1rem;
+        position: relative;
+        top: -35px;
+        left: 40px;
+    }
+
+    .b_m_img {
+        position: relative;
+        top: -8rem;
+    }
+
+    .b_m_img_israel {
+        position: relative;
+        top: -13rem;
+        margin-bottom: -13rem; 
     }
 }
- 
+
+#home_about-us {
+    
+    .h-a-us-para{ font-size: 17px; line-height: 26px; color: $text-color; }
+    
+    padding: 5rem 0rem; 
+    
+    .h-a-us-m-h {
+        color: $base-color;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.2rem; margin-bottom: 0.75rem; 
+    }
+
+    .h-a-us-h {
+        color: $base-color;
+      
+
+        h1 {
+            font-family: 'Poppins', sans-serif;  font-size: 48px;
+            line-height: 53px;  font-weight: 300; margin-bottom: 2.5rem;  
+        }
+    }
+}

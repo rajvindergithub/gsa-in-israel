@@ -11,11 +11,10 @@ get_header(); ?>
 <section id="banner_main">
     <div class="container">
         <div class="row">
-            <div class="b_m_heading t-upper f-800">Connecting</div>
-            <div class="b_m_s_heading t-upper f-700">airlines to</div>
+            <div class="b_m_heading t-upper fw-800">Connecting</div>
+            <div class="b_m_s_heading t-upper fw-700">airlines to</div>
             <div class="b_m_img"><img src="<?php echo THEME_PATH; ?>/assets/images/banner_plan.png"></div>
-            <div class="b_m_img_israel">img_israel</div>
-            <div class="b_m_img_israel_heading"> Your Gateway to Success!</div>
+            <div class="b_m_img_israel"><img src="<?php echo THEME_PATH; ?>/assets/images/banner_israel.png"></div>
         </div>
     </div>
 </section>
@@ -25,24 +24,19 @@ get_header(); ?>
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <div class="h-a-us-m-h">About Us</div>
-                <div class="h-a-us-h">
-                    <h1>We are your future GSA in <span>ISRAEL</span></h1>
+                <div class="h-a-us-m-h fw-400 t-upper">About Us</div>
+                <div class="h-a-us-h fw-300 t-upper">
+                    <h1>We are your future <br class="line-break" />GSA in <span class="fw-600">ISRAEL</span></h1>
                 </div>
                 <div class="h-a-us-para">
-                    <p>
+                    <p class="fw-300">
                         Our goal is to help the airlines that we represent maintain an active presence among the travel agencies and tour operators in Israel.  years of experience on the tourism scene guarantees our access to the Israeli market, where our name and our success is well recognized. Our success is maintained through our dedication to the needs of our clients.
                     </p>
-                    <p>
-                        Our goal is to help the airlines that we represent maintain an active presence among the travel agencies and tour operators in Israel.  years of experience on the tourism scene guarantees our access to the Israeli market, where our name and our success is well recognized. Our success is maintained through our dedication to the needs of our clients.
-                    </p>
-                    <p>
-                        Our goal is to help the airlines that we represent maintain an active presence among the travel agencies and tour operators in Israel.  years of experience on the tourism scene guarantees our access to the Israeli market, where our name and our success is well recognized. Our success is maintained through our dedication to the needs of our clients.
-                    </p>
+                     
                 </div>
             </div>
             <div class="col-md-6">
-                img
+                <img src="<?php echo THEME_PATH; ?>/assets/images/right-choose.png" class="img-fluid">
             </div>
         </div>
     </div>
