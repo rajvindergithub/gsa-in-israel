@@ -30,9 +30,9 @@ get_header(); ?>
                 </div>
                 <div class="h-a-us-para">
                     <p class="fw-300">
-                        Our goal is to help the airlines that we represent maintain an active presence among the travel agencies and tour operators in Israel.  years of experience on the tourism scene guarantees our access to the Israeli market, where our name and our success is well recognized. Our success is maintained through our dedication to the needs of our clients.
+                        Our goal is to help the airlines that we represent maintain an active presence among the travel agencies and tour operators in Israel. years of experience on the tourism scene guarantees our access to the Israeli market, where our name and our success is well recognized. Our success is maintained through our dedication to the needs of our clients.
                     </p>
-                     
+
                 </div>
             </div>
             <div class="col-md-6">
@@ -48,50 +48,60 @@ get_header(); ?>
 <section id="home_industry-overview">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
-                <div class="h-i-o-h-m">
-                    Industry Overview
-                </div>
-                <div class="h-i-o-h">
-                    <h2>The Travel Industry In <span>ISRAEL</span></h2>    
-                </div>
-                <div class="h-i-o-para">
-                    <p>Israel, in despite its small size, provides a huge market for Airlines, due to its significance to the three major religions of the world.</p>
-                     <p>Israel, in despite its small size, provides a huge market for Airlines, due to its significance to the three major religions of the world.</p>
-                     <p>Israel, in despite its small size, provides a huge market for Airlines, due to its significance to the three major religions of the world.</p>
+            <div class="col-md-5  offset-7">
+                <div class="blue_block blue-bg ">
+                    <div class="h-i-o-h-m t-upper fw-400">
+                        Industry Overview
+                    </div>
+                    <div class="h-i-o-h fw-300">
+                        <h2 class="fw-300">The Travel Industry In <span class="fw-600">ISRAEL</span></h2>
+                    </div>
+                    <div class="h-i-o-para">
+                        <p>Israel, in despite its small size, provides a huge market for Airlines, due to its significance to the three major religions of the world.</p>
+                        <p>Israel, in despite its small size, provides a huge market for Airlines, due to its significance to the three major religions of the world.</p>
+                        <p>Israel, in despite its small size, provides a huge market for Airlines, due to its significance to the three major religions of the world.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+ 
 <!-- home_industry-overview -->
 
 <section id="home_marketing_strategy">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="h-m-s-h-m">Marketing Strategy</div>
-                <div class="h-m-s-h">
-                    <h2>OUR MARKETING <span>DEPARTMENT</span></h2>
+                <div class="h-m-s-h-m fw-400 t-upper t-center">Marketing Strategy</div>
+                <div class="h-m-s-h t-center">
+                    <h2 class="fw-300">OUR MARKETING <span class="fw-600">DEPARTMENT</span></h2>
                 </div>
-                <div class="h-m-s-para">
-                    <p>Our experienced staff is fully dedicated to promote the companies we represent in a variety of areas:</p>
+                <div class="h-m-s-para t-center fw-400">
+                    <p>Our experienced staff is fully dedicated to promote the companies <br class="hide-md" /> we represent in a variety of areas:</p>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4">
-                <div class="h-m-s-block">
-                    <div class="h-m-s-b-img">img</div>
-                    <div class="h-m-s-b-heading">Direct promotion</div>
-                    <div class="h-m-s-b-line"><span>&nbsp;</span></div>
-                    <div class="h-m-s-b-para">Sales personnel visit the travel agencies daily to provide all the necessary information - new airlines routes, fares and schedules .</div>
+            <div class="col-md-3">
+                
+                
+                <div class="h-m-s-block t-center">
+                    <div class="h-m-s-b-img">
+                        <img src="<?php echo THEME_PATH ?>/assets/images/right-choose.png" />
+                    </div>
+                    <div class="h-m-s-b-heading t-upper fw-500">Direct promotion</div>
+                    <div class="h-m-s-b-line"></div>
+                    <div class="h-m-s-b-para">
+                        <p>Sales personnel visit the travel agencies daily to provide all the necessary information - new airlines routes, fares and schedules .</p>
+                    </div>
                 </div>
             </div>
+            
         </div>
     </div>
 </section>
-<!-- home_marketing_strategy --> 
+<!-- home_marketing_strategy -->
 
 
 <section id="home_by-director">
@@ -114,17 +124,17 @@ get_header(); ?>
         </div>
     </div>
 </section>
-<!-- home_by-director --> 	
- 
+<!-- home_by-director -->
+
 
 <section id="home_about-us">
     <div class="container">
         <div class="row">
-            
+
         </div>
     </div>
 </section>
-<!-- home_about-us --> 	
-	 
+<!-- home_about-us -->
+
 
 <?php get_footer(); ?>
