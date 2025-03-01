@@ -1,0 +1,23 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: "Poppins", sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #FFF;
+    color: #333;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+#banner_main{ text-align: center;  
+    .b_m_heading{ font-size: 92px; line-height: 138px; letter-spacing: 0.15rem; color: $base-color;   }
+    .b_m_s_heading{
+         color: $base-color;font-size: 54px; line-height: 81px; letter-spacing: 0.25rem;
+    }
+}
+ 
