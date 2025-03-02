@@ -11,11 +11,10 @@ get_header(); ?>
 <section id="banner_main">
     <div class="container">
         <div class="row">
-            <div class="b_m_heading t-upper f-800">Connecting</div>
-            <div class="b_m_s_heading t-upper f-700">airlines to</div>
+            <div class="b_m_heading t-upper fw-800">Connecting</div>
+            <div class="b_m_s_heading t-upper fw-700">airlines to</div>
             <div class="b_m_img"><img src="<?php echo THEME_PATH; ?>/assets/images/banner_plan.png"></div>
-            <div class="b_m_img_israel">img_israel</div>
-            <div class="b_m_img_israel_heading"> Your Gateway to Success!</div>
+            <div class="b_m_img_israel"><img src="<?php echo THEME_PATH; ?>/assets/images/banner_israel.png"></div>
         </div>
     </div>
 </section>
@@ -25,24 +24,22 @@ get_header(); ?>
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <div class="h-a-us-m-h">About Us</div>
-                <div class="h-a-us-h">
-                    <h1>We are your future GSA in <span>ISRAEL</span></h1>
+                <div class="h-a-us-m-h fw-400 t-upper">About Us</div>
+                <div class="h-a-us-h fw-300 t-upper">
+                    <h1>We are your future <br class="line-break" />GSA in <span class="fw-600">ISRAEL</span></h1>
                 </div>
                 <div class="h-a-us-para">
-                    <p>
-                        Our goal is to help the airlines that we represent maintain an active presence among the travel agencies and tour operators in Israel.  years of experience on the tourism scene guarantees our access to the Israeli market, where our name and our success is well recognized. Our success is maintained through our dedication to the needs of our clients.
-                    </p>
-                    <p>
-                        Our goal is to help the airlines that we represent maintain an active presence among the travel agencies and tour operators in Israel.  years of experience on the tourism scene guarantees our access to the Israeli market, where our name and our success is well recognized. Our success is maintained through our dedication to the needs of our clients.
-                    </p>
-                    <p>
-                        Our goal is to help the airlines that we represent maintain an active presence among the travel agencies and tour operators in Israel.  years of experience on the tourism scene guarantees our access to the Israeli market, where our name and our success is well recognized. Our success is maintained through our dedication to the needs of our clients.
-                    </p>
+                    <?php the_content(); ?>
+
                 </div>
             </div>
             <div class="col-md-6">
-                img
+                <?php
+                    if (has_post_thumbnail()) {
+                        $image_url = get_the_post_thumbnail_url();
+                        echo '<img src="' . esc_url($image_url) . '" alt="Your Right Choose">';
+                    }
+                ?>
             </div>
         </div>
     </div>
@@ -54,83 +51,175 @@ get_header(); ?>
 <section id="home_industry-overview">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
-                <div class="h-i-o-h-m">
-                    Industry Overview
-                </div>
-                <div class="h-i-o-h">
-                    <h2>The Travel Industry In <span>ISRAEL</span></h2>    
-                </div>
-                <div class="h-i-o-para">
-                    <p>Israel, in despite its small size, provides a huge market for Airlines, due to its significance to the three major religions of the world.</p>
-                     <p>Israel, in despite its small size, provides a huge market for Airlines, due to its significance to the three major religions of the world.</p>
-                     <p>Israel, in despite its small size, provides a huge market for Airlines, due to its significance to the three major religions of the world.</p>
+            <div class="col-md-5  offset-sm-7">
+                <div class="blue_block blue-bg ">
+                    <div class="h-i-o-h-m t-upper fw-400">
+                        Industry Overview
+                    </div>
+                    <div class="h-i-o-h fw-300">
+                        <h2 class="fw-300">
+                            <?php echo esc_html( get_field('industry_overview_heading') ); ?> <span class="fw-600">ISRAEL</span></h2>
+                    </div>
+                    <div class="h-i-o-para">
+                        <?php echo get_field('industry_overview_paragraph') ; ?>
+                    </div>
                 </div>
             </div>
         </div>
+
+
+
+
     </div>
+
 </section>
+
+
+
 <!-- home_industry-overview -->
 
 <section id="home_marketing_strategy">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="h-m-s-h-m">Marketing Strategy</div>
-                <div class="h-m-s-h">
-                    <h2>OUR MARKETING <span>DEPARTMENT</span></h2>
+                <div class="h-m-s-h-m fw-400 t-upper t-center">Marketing Strategy</div>
+                <div class="h-m-s-h t-center">
+                    <h2 class="fw-300">OUR MARKETING <span class="fw-600">DEPARTMENT</span></h2>
                 </div>
-                <div class="h-m-s-para">
-                    <p>Our experienced staff is fully dedicated to promote the companies we represent in a variety of areas:</p>
+                <div class="h-m-s-para t-center fw-400">
+                    <p>Our experienced staff is fully dedicated to promote the companies <br class="hide-md" /> we represent in a variety of areas:</p>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4">
-                <div class="h-m-s-block">
-                    <div class="h-m-s-b-img">img</div>
-                    <div class="h-m-s-b-heading">Direct promotion</div>
-                    <div class="h-m-s-b-line"><span>&nbsp;</span></div>
-                    <div class="h-m-s-b-para">Sales personnel visit the travel agencies daily to provide all the necessary information - new airlines routes, fares and schedules .</div>
+            
+            <div class="col-md-3">
+                <div class="h-m-s-block t-center">
+                    <div class="h-m-s-b-img">
+
+                        <img src="<?php echo get_field('markeing_department_one_image') ; ?>" />
+                    </div>
+                    <div class="h-m-s-b-heading t-upper fw-500">
+                        <?php echo get_field('markeing_department_one_heading') ; ?>
+                    </div>
+                    <div class="h-m-s-b-line"></div>
+                    <div class="h-m-s-b-para">
+                        <?php echo get_field('markeing_department_one_paragraph') ; ?>
+                    </div>
                 </div>
             </div>
+            
+            <div class="col-md-3">
+                <div class="h-m-s-block t-center">
+                    <div class="h-m-s-b-img">
+
+                        <img src="<?php echo get_field('markeing_department_two_image') ; ?>" />
+                    </div>
+                    <div class="h-m-s-b-heading t-upper fw-500">
+                        <?php echo get_field('markeing_department_two_heading') ; ?>
+                    </div>
+                    <div class="h-m-s-b-line"></div>
+                    <div class="h-m-s-b-para">
+                        <?php echo get_field('markeing_department_two_paragraph') ; ?>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-3">
+                <div class="h-m-s-block t-center">
+                    <div class="h-m-s-b-img">
+
+                        <img src="<?php echo get_field('markeing_department_three_image') ; ?>" />
+                    </div>
+                    <div class="h-m-s-b-heading t-upper fw-500">
+                        <?php echo get_field('markeing_department_three_heading') ; ?>
+                    </div>
+                    <div class="h-m-s-b-line"></div>
+                    <div class="h-m-s-b-para">
+                        <?php echo get_field('markeing_department_three_paragraph') ; ?>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-3">
+                <div class="h-m-s-block t-center">
+                    <div class="h-m-s-b-img">
+
+                        <img src="<?php echo get_field('markeing_department_four_image') ; ?>" />
+                    </div>
+                    <div class="h-m-s-b-heading t-upper fw-500">
+                        <?php echo get_field('markeing_department_four_heading') ; ?>
+                    </div>
+                    <div class="h-m-s-b-line"></div>
+                    <div class="h-m-s-b-para">
+                        <?php echo get_field('markeing_department_four_paragraph') ; ?>
+                    </div>
+                </div>
+            </div>
+
+
+
         </div>
     </div>
 </section>
-<!-- home_marketing_strategy --> 
+<!-- home_marketing_strategy -->
 
 
 <section id="home_by-director">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">img</div>
             <div class="col-md-6">
-                <div class="h-d-h-m">by Director</div>
-                <div class="h-d-h">PERSONNEL AND <span>PREMISES</span></div>
-                <div class="h-d-para">
-                    <p>Our goals have been achieved through the dedication of our highly qualified staff experienced in boosting collaboration between tour operators, travel agencies and our representative Airlines.</p>
-                    <p>Our goals have been achieved through the dedication of our highly qualified staff experienced in boosting collaboration between tour operators, travel agencies and our representative Airlines.</p>
-                    <p>Our goals have been achieved through the dedication of our highly qualified staff experienced in boosting collaboration between tour operators, travel agencies and our representative Airlines.</p>
+                <div>
+                    <img src="<?php echo get_field('by_director_image') ; ?>" />
                 </div>
-                <div class="h-d-line">&nbsp;</div>
-                <div class="h-d-sign"></div>
-                <div class="h-d-name"></div>
+            </div>
+            <div class="col-md-6">
+                <div class="h-d-h-m fw-400 t-upper">by Director</div>
+                <div class="h-d-h t-upper fw-300">PERSONNEL AND <span class="fw-600">PREMISES</span></div>
+                <div class="h-d-para">
+                     <?php echo get_field('by_director_paragraph') ; ?>
+                </div>
+                <div class="h-d-line mtb-30">&nbsp;</div>
+                <div class="h-d-sign mtb-10">
+                    <img src="<?php echo THEME_PATH; ?>/assets/images/signature.png" alt="Signature" title="Signature" />
+                </div>
+                <div class="h-d-name">Fabian Savir</div>
                 <div class="h-d-pos">Managing Director | GSA AIRLINES Israel</div>
             </div>
         </div>
     </div>
 </section>
-<!-- home_by-director --> 	
- 
+<!-- home_by-director -->
+
+
+<section id="home_contact-us">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="h-c-heading t-center mtb-30">
+                    <img src="<?php echo THEME_PATH; ?>/assets/images/contact_heading.png" alt="Contact US" title="Contact US" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="h-c-h-sub t-upper">
+                    <h3>we will contact you as soon as possible.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- home_contact-us -->
 
 <section id="home_about-us">
     <div class="container">
         <div class="row">
-            
+
         </div>
     </div>
 </section>
-<!-- home_about-us --> 	
-	 
+<!-- home_about-us -->
+
 
 <?php get_footer(); ?>

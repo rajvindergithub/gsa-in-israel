@@ -7,6 +7,12 @@
 
 define('THEME_PATH', get_template_directory_uri());
 
+
+
+
+
+
+
 // bs css and js enq
 function enqueue_bootstrap() {
     // Enqueue Bootstrap CSS
@@ -20,6 +26,18 @@ function enqueue_bootstrap() {
 add_action('wp_enqueue_scripts', 'enqueue_bootstrap');
 
 
+//primary menu
+
+function register_my_menus() {
+    register_nav_menus(
+        array(
+            'top-menu' => __('Top Menu'),
+            'footer-menu' => __('Footer Menu')
+        )
+    );
+}
+add_action('init', 'register_my_menus');
+
 
 	
 // Theme support options
@@ -32,7 +50,7 @@ require_once(get_template_directory().'/functions/cleanup.php');
 require_once(get_template_directory().'/functions/enqueue-scripts.php'); 
 
 // Register custom menus and menu walkers
-require_once(get_template_directory().'/functions/menu.php'); 
+//require_once(get_template_directory().'/functions/menu.php'); 
 
 // Register sidebars/widget areas
 require_once(get_template_directory().'/functions/sidebar.php'); 
@@ -45,6 +63,9 @@ require_once(get_template_directory().'/functions/page-navi.php');
 
 // Adds support for multiple languages
 require_once(get_template_directory().'/functions/translation/translation.php'); 
+
+
+require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 
 // Adds site styles to the WordPress editor
 // require_once(get_template_directory().'/functions/editor-styles.php'); 

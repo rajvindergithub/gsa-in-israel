@@ -3,21 +3,317 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-     font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 /* Body Styling */
 body {
     background-color: #FFF;
     color: #333;
-  font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
+.blue-bg {
+    background-color: $base-color;
+}
 
-#banner_main{ text-align: center;  
-    .b_m_heading{ font-size: 92px; line-height: 138px; letter-spacing: 0.15rem; color: $base-color;   }
-    .b_m_s_heading{
-         color: $base-color;font-size: 54px; line-height: 81px; letter-spacing: 0.25rem;
+#top-bar-menu {
+    background-color: #FFF;
+    padding: 0rem 2rem;
+    border-bottom: 1px solid #B6C0CE;
+    display: flex; justify-content: space-between; align-items: center; 
+}
+
+.top_bar_cta {
+    a {
+        background-color: #E3B316;
+        font-family: Poppins;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.05rem;
+        text-align: center;
+        color: #4D3D0B;
+        border-radius: 50px; padding: 0.5rem 1.5rem; 
     }
 }
+
+#menu-top-menu{
+    li{
+        a{
+            background-color: transparent !important; 
+            font-family: Poppins;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.05rem;
+            text-align: center;
+            color: #031837;
+            text-transform: uppercase; 
+
+        }
+    }
+}
+
+.top-bar ul{ background-color: #FFF !important; }
+.top-bar{ background-color: #FFF !important; }
+
+#banner_main {
+
+    position: relative;
+    text-align: center;
+    background-image: url(../images/bg_banner.png);
+    background-position: center bottom;
+    padding: 4rem 0rem 2rem 0rem;
+
+    .b_m_heading {
+        font-size: 92px;
+        line-height: 138px;
+        letter-spacing: 0.75rem;
+        color: $base-color;
+    }
+
+    .b_m_s_heading {
+        color: $base-color;
+        font-size: 52px;
+        line-height: 81px;
+        letter-spacing: 1rem;
+        position: relative;
+        top: -35px;
+        left: 40px;
+    }
+
+    .b_m_img {
+        position: relative;
+        top: -8rem;
+    }
+
+    .b_m_img_israel {
+        position: relative;
+        top: -13rem;
+        margin-bottom: -13rem;
+    }
+}
+
+#home_about-us {
+
+    .h-a-us-para {
+        @include para;
+    }
+
+    padding: 5rem 0rem;
+
+    .h-a-us-m-h {
+        @include heading-min;
+    }
+
+    .h-a-us-h {
+        color: $base-color;
+
+
+        h1 {
+            @include heading-h1;
+        }
+    }
+}
+
+#home_industry-overview {
+    
+    position: relative; 
+
+    background-image: url(../images/cloud-mount/cloud-mount-above.png);
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    padding: 5rem 0rem 10rem 0rem;
+
+
+
+    font-family: 'Poppins',
+    sans-serif;
+
+    .h-i-o-h-m {
+        color: $yellow-color;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.5rem;
+    }
+
+    .h-i-o-h {
+        h2 {
+            font-family: 'Poppins', sans-serif;
+            color: #FFF;
+        }
+    }
+
+    .h-i-o-para {
+        
+        p {
+            font-family: 'Poppins', sans-serif;
+            color: #FFF;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 26px;
+        }
+    }
+
+
+    .blue_block {
+        padding: 3rem 3rem 10rem 3rem;
+    }
+}
+
+#home_industry_overload {
+    background-image: url('../images/cloud-mount/cloud-mount-above.png');
+    height: 550px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-color: transparent;
+    position: relative;
+    top: -24rem;
+}
+
+#home_marketing_strategy {
+    padding: 5rem 0rem;
+
+    .h-m-s-h-m {
+        text-align: center;
+        color: $base-color;
+        letter-spacing: 0.29rem;
+    }
+
+    .h-m-s-h {
+        h2 {
+            font-family: 'Poppins', sans-serif;
+            color: $base-color;
+        }
+    }
+
+    .h-m-s-para {
+        color: $text-color;
+        font-size: 17px;
+        line-height: 26px;
+    }
+
+    .h-m-s-block {
+        margin-top: 4rem;
+
+        .h-m-s-b-img {
+            margin-bottom: 1rem;
+
+            img {
+
+                height: 235px;
+                border-radius: 20px;
+                width: 100%;
+                object-fit: cover;
+
+            }
+        }
+
+        box-shadow: 0px 0px 34px 0px #00000033;
+        background-color: #FFF;
+        border-radius: 20px;
+        padding: 1rem;
+        min-height: 520px;
+
+        .h-m-s-b-heading {
+            color: #000;
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        .h-m-s-b-line {
+            height: 5px;
+            background-color: #E3B316;
+            width: 30%;
+            border-radius: 10px;
+            max-width: 100%;
+            margin: 1rem auto;
+        }
+
+        .h-m-s-b-para {
+            margin-top: 0.25rem;
+            font-weight: 400;
+                font-size: 15px;
+                line-height: 21px;
+                color: #4b4b4b;
+
+            p {
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 21px;
+                color: #4b4b4b;
+            }
+        }
+
+    }
+
+}
+
+#home_by-director {
+    .h-d-h-m {
+        @include heading-min;
+    }
+
+    .h-d-h {
+        @include heading-h1;
+    }
+
+    .h-d-para {
+        @include para;
+    }
+
+    .h-d-line {
+        @include gray-line;
+    }
+
+    .h-d-name {
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 27px;
+        letter-spacing: 0%;
+
+    }
+
+    .h-d-pos {
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 27px;
+        letter-spacing: 0%;
+        color: #031837;
+
+
+    }
+}
+
+#home_contact-us {
+    margin-top: 3rem;
+
+    .h-c-h-sub {
+        h3 {
+            font-family: Poppins;
+            font-weight: 300;
+            font-size: 32px;
+            line-height: 48px;
+            letter-spacing: 0.45rem;
+            text-align: center;
+            color: $base-color;
+        }
+    }
+}
+
+body::-webkit-scrollbar {
+  width: 0.75em;
+}
  
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: $base-color;
+  outline: 1px solid #FFF;
+}
