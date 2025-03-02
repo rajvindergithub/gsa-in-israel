@@ -29,14 +29,17 @@ get_header(); ?>
                     <h1>We are your future <br class="line-break" />GSA in <span class="fw-600">ISRAEL</span></h1>
                 </div>
                 <div class="h-a-us-para">
-                    <p class="fw-300">
-                        Our goal is to help the airlines that we represent maintain an active presence among the travel agencies and tour operators in Israel. years of experience on the tourism scene guarantees our access to the Israeli market, where our name and our success is well recognized. Our success is maintained through our dedication to the needs of our clients.
-                    </p>
+                    <?php the_content(); ?>
 
                 </div>
             </div>
             <div class="col-md-6">
-                <img src="<?php echo THEME_PATH; ?>/assets/images/right-choose.png" class="img-fluid">
+                <?php
+                    if (has_post_thumbnail()) {
+                        $image_url = get_the_post_thumbnail_url();
+                        echo '<img src="' . esc_url($image_url) . '" alt="Your Right Choose">';
+                    }
+                ?>
             </div>
         </div>
     </div>
@@ -48,25 +51,31 @@ get_header(); ?>
 <section id="home_industry-overview">
     <div class="container">
         <div class="row">
-            <div class="col-md-5  offset-7">
+            <div class="col-md-5  offset-sm-7">
                 <div class="blue_block blue-bg ">
                     <div class="h-i-o-h-m t-upper fw-400">
                         Industry Overview
                     </div>
                     <div class="h-i-o-h fw-300">
-                        <h2 class="fw-300">The Travel Industry In <span class="fw-600">ISRAEL</span></h2>
+                        <h2 class="fw-300">
+                            <?php echo esc_html( get_field('industry_overview_heading') ); ?> <span class="fw-600">ISRAEL</span></h2>
                     </div>
                     <div class="h-i-o-para">
-                        <p>Israel, in despite its small size, provides a huge market for Airlines, due to its significance to the three major religions of the world.</p>
-                        <p>Israel, in despite its small size, provides a huge market for Airlines, due to its significance to the three major religions of the world.</p>
-                        <p>Israel, in despite its small size, provides a huge market for Airlines, due to its significance to the three major religions of the world.</p>
+                        <?php echo get_field('industry_overview_paragraph') ; ?>
                     </div>
                 </div>
             </div>
         </div>
+
+
+
+
     </div>
+
 </section>
- 
+
+
+
 <!-- home_industry-overview -->
 
 <section id="home_marketing_strategy">
@@ -83,21 +92,73 @@ get_header(); ?>
             </div>
         </div>
         <div class="row">
+            
             <div class="col-md-3">
-                
-                
                 <div class="h-m-s-block t-center">
                     <div class="h-m-s-b-img">
-                        <img src="<?php echo THEME_PATH ?>/assets/images/right-choose.png" />
+
+                        <img src="<?php echo get_field('markeing_department_one_image') ; ?>" />
                     </div>
-                    <div class="h-m-s-b-heading t-upper fw-500">Direct promotion</div>
+                    <div class="h-m-s-b-heading t-upper fw-500">
+                        <?php echo get_field('markeing_department_one_heading') ; ?>
+                    </div>
                     <div class="h-m-s-b-line"></div>
                     <div class="h-m-s-b-para">
-                        <p>Sales personnel visit the travel agencies daily to provide all the necessary information - new airlines routes, fares and schedules .</p>
+                        <?php echo get_field('markeing_department_one_paragraph') ; ?>
                     </div>
                 </div>
             </div>
             
+            <div class="col-md-3">
+                <div class="h-m-s-block t-center">
+                    <div class="h-m-s-b-img">
+
+                        <img src="<?php echo get_field('markeing_department_two_image') ; ?>" />
+                    </div>
+                    <div class="h-m-s-b-heading t-upper fw-500">
+                        <?php echo get_field('markeing_department_two_heading') ; ?>
+                    </div>
+                    <div class="h-m-s-b-line"></div>
+                    <div class="h-m-s-b-para">
+                        <?php echo get_field('markeing_department_two_paragraph') ; ?>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-3">
+                <div class="h-m-s-block t-center">
+                    <div class="h-m-s-b-img">
+
+                        <img src="<?php echo get_field('markeing_department_three_image') ; ?>" />
+                    </div>
+                    <div class="h-m-s-b-heading t-upper fw-500">
+                        <?php echo get_field('markeing_department_three_heading') ; ?>
+                    </div>
+                    <div class="h-m-s-b-line"></div>
+                    <div class="h-m-s-b-para">
+                        <?php echo get_field('markeing_department_three_paragraph') ; ?>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-3">
+                <div class="h-m-s-block t-center">
+                    <div class="h-m-s-b-img">
+
+                        <img src="<?php echo get_field('markeing_department_four_image') ; ?>" />
+                    </div>
+                    <div class="h-m-s-b-heading t-upper fw-500">
+                        <?php echo get_field('markeing_department_four_heading') ; ?>
+                    </div>
+                    <div class="h-m-s-b-line"></div>
+                    <div class="h-m-s-b-para">
+                        <?php echo get_field('markeing_department_four_paragraph') ; ?>
+                    </div>
+                </div>
+            </div>
+
+
+
         </div>
     </div>
 </section>
@@ -107,14 +168,16 @@ get_header(); ?>
 <section id="home_by-director">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">img</div>
+            <div class="col-md-6">
+                <div>
+                    <img src="<?php echo get_field('by_director_image') ; ?>" />
+                </div>
+            </div>
             <div class="col-md-6">
                 <div class="h-d-h-m fw-400 t-upper">by Director</div>
                 <div class="h-d-h t-upper fw-300">PERSONNEL AND <span class="fw-600">PREMISES</span></div>
                 <div class="h-d-para">
-                    <p>Our goals have been achieved through the dedication of our highly qualified staff experienced in boosting collaboration between tour operators, travel agencies and our representative Airlines.</p>
-                    <p>Our goals have been achieved through the dedication of our highly qualified staff experienced in boosting collaboration between tour operators, travel agencies and our representative Airlines.</p>
-                    <p>Our goals have been achieved through the dedication of our highly qualified staff experienced in boosting collaboration between tour operators, travel agencies and our representative Airlines.</p>
+                     <?php echo get_field('by_director_paragraph') ; ?>
                 </div>
                 <div class="h-d-line mtb-30">&nbsp;</div>
                 <div class="h-d-sign mtb-10">

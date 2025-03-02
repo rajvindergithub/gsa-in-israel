@@ -93,6 +93,43 @@ body {
 .blue-bg {
   background-color: #18417C; }
 
+#top-bar-menu {
+  background-color: #FFF;
+  padding: 0rem 2rem;
+  border-bottom: 1px solid #B6C0CE;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.top_bar_cta a {
+  background-color: #E3B316;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.05rem;
+  text-align: center;
+  color: #4D3D0B;
+  border-radius: 50px;
+  padding: 0.5rem 1.5rem; }
+
+#menu-top-menu li a {
+  background-color: transparent !important;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.05rem;
+  text-align: center;
+  color: #031837;
+  text-transform: uppercase; }
+
+.top-bar ul {
+  background-color: #FFF !important; }
+
+.top-bar {
+  background-color: #FFF !important; }
+
 #banner_main {
   position: relative;
   text-align: center;
@@ -143,18 +180,13 @@ body {
       margin-bottom: 2.5rem; }
 
 #home_industry-overview {
-  background-image: url(../images/cloud-mount/all.jpg);
+  position: relative;
+  background-image: url(../images/cloud-mount/cloud-mount-above.png);
   background-size: cover;
-  background-position: center bottom;
+  background-position: bottom center;
   background-repeat: no-repeat;
   padding: 5rem 0rem 10rem 0rem;
   font-family: 'Poppins', sans-serif; }
-  #home_industry-overview .mount_after_section {
-    background-image: url(../images/cloud-mount/above-blue.png);
-    height: 100px;
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: cover; }
   #home_industry-overview .h-i-o-h-m {
     color: #E3B316;
     font-size: 20px;
@@ -200,7 +232,7 @@ body {
     background-color: #FFF;
     border-radius: 20px;
     padding: 1rem;
-    min-height: 300px; }
+    min-height: 520px; }
     #home_marketing_strategy .h-m-s-block .h-m-s-b-img {
       margin-bottom: 1rem; }
       #home_marketing_strategy .h-m-s-block .h-m-s-b-img img {
@@ -220,7 +252,11 @@ body {
       max-width: 100%;
       margin: 1rem auto; }
     #home_marketing_strategy .h-m-s-block .h-m-s-b-para {
-      margin-top: 0.25rem; }
+      margin-top: 0.25rem;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 21px;
+      color: #4b4b4b; }
       #home_marketing_strategy .h-m-s-block .h-m-s-b-para p {
         font-weight: 400;
         font-size: 15px;
@@ -272,5 +308,113 @@ body {
     letter-spacing: 0.45rem;
     text-align: center;
     color: #18417C; }
+
+body::-webkit-scrollbar {
+  width: 0.75em; }
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0); }
+
+body::-webkit-scrollbar-thumb {
+  background-color: #18417C;
+  outline: 1px solid #FFF; }
+
+footer {
+  background-color: #18417C;
+  padding: 3rem; }
+  footer .footer_logo {
+    text-align: center;
+    margin-bottom: 3rem; }
+  footer .f_block .f_b_heading {
+    display: flex;
+    align-items: center;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22.5px;
+    letter-spacing: 0.05rem;
+    color: #FFF;
+    margin-bottom: 1.5rem;
+    position: relative; }
+    footer .f_block .f_b_heading span {
+      margin-right: 0.3rem; }
+    footer .f_block .f_b_heading::after {
+      position: absolute;
+      width: 51px;
+      height: 2px;
+      bottom: -10px;
+      left: 2px;
+      border-radius: 40px;
+      content: "";
+      background: #E3B316; }
+  footer .f_b_details p {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.1rem;
+    color: #B6C7DE; }
+  footer .f_b_social_m ul {
+    display: flex;
+    list-style: none;
+    text-align: left;
+    column-gap: 0.9rem;
+    margin-left: 0px;
+    align-items: center; }
+    footer .f_b_social_m ul li {
+      text-align: center; }
+
+#footer_copy_write {
+  background-color: #18417C;
+  color: #FFF;
+  border-top: 0.25px solid rgba(217, 217, 217, 0.25);
+  padding-top: 0.75rem; }
+  #footer_copy_write .f-c-w-list ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    column-gap: 1.75rem; }
+    #footer_copy_write .f-c-w-list ul li {
+      font-family: Poppins;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 19.5px;
+      letter-spacing: 0.09rem; }
+
+.footer-menu ul {
+  margin-bottom: 3rem;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  column-gap: 3rem;
+  padding: 1.5rem 0rem;
+  position: relative; }
+  .footer-menu ul::after {
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    right: 0px;
+    height: 1px;
+    content: "";
+    width: 100%;
+    background: linear-gradient(90deg, rgba(217, 217, 217, 0) 0%, rgba(217, 217, 217, 0.4) 44%, rgba(217, 217, 217, 0) 100%); }
+  .footer-menu ul::before {
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    right: 0px;
+    height: 1px;
+    content: "";
+    width: 100%;
+    background: linear-gradient(90deg, rgba(217, 217, 217, 0) 0%, rgba(217, 217, 217, 0.4) 44%, rgba(217, 217, 217, 0) 100%); }
+  .footer-menu ul li a {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22.5px;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #B6C7DE; }
 
 /*# sourceMappingURL=style.css.map */

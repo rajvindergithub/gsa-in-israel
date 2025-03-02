@@ -17,6 +17,47 @@ body {
     background-color: $base-color;
 }
 
+#top-bar-menu {
+    background-color: #FFF;
+    padding: 0rem 2rem;
+    border-bottom: 1px solid #B6C0CE;
+    display: flex; justify-content: space-between; align-items: center; 
+}
+
+.top_bar_cta {
+    a {
+        background-color: #E3B316;
+        font-family: Poppins;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.05rem;
+        text-align: center;
+        color: #4D3D0B;
+        border-radius: 50px; padding: 0.5rem 1.5rem; 
+    }
+}
+
+#menu-top-menu{
+    li{
+        a{
+            background-color: transparent !important; 
+            font-family: Poppins;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.05rem;
+            text-align: center;
+            color: #031837;
+            text-transform: uppercase; 
+
+        }
+    }
+}
+
+.top-bar ul{ background-color: #FFF !important; }
+.top-bar{ background-color: #FFF !important; }
+
 #banner_main {
 
     position: relative;
@@ -57,13 +98,13 @@ body {
 #home_about-us {
 
     .h-a-us-para {
-        @include para; 
+        @include para;
     }
 
     padding: 5rem 0rem;
 
     .h-a-us-m-h {
-       @include heading-min; 
+        @include heading-min;
     }
 
     .h-a-us-h {
@@ -71,23 +112,18 @@ body {
 
 
         h1 {
-            @include heading-h1; 
+            @include heading-h1;
         }
     }
 }
 
 #home_industry-overview {
-    .mount_after_section {
-        background-image: url(../images/cloud-mount/above-blue.png);
-        height: 100px;
-        background-repeat: no-repeat;
-        background-position: center bottom;
-        background-size: cover;
-    }
+    
+    position: relative; 
 
-    background-image: url(../images/cloud-mount/all.jpg);
+    background-image: url(../images/cloud-mount/cloud-mount-above.png);
     background-size: cover;
-    background-position: center bottom;
+    background-position: bottom center;
     background-repeat: no-repeat;
     padding: 5rem 0rem 10rem 0rem;
 
@@ -111,6 +147,7 @@ body {
     }
 
     .h-i-o-para {
+        
         p {
             font-family: 'Poppins', sans-serif;
             color: #FFF;
@@ -136,7 +173,9 @@ body {
     top: -24rem;
 }
 
-#home_marketing_strategy { padding: 5rem 0rem; 
+#home_marketing_strategy {
+    padding: 5rem 0rem;
+
     .h-m-s-h-m {
         text-align: center;
         color: $base-color;
@@ -157,47 +196,79 @@ body {
     }
 
     .h-m-s-block {
-        margin-top: 4rem; 
-        .h-m-s-b-img{ margin-bottom: 1rem; 
-            img{
-                
-                height: 235px; border-radius: 20px; width: 100%; object-fit: cover;  
-                
+        margin-top: 4rem;
+
+        .h-m-s-b-img {
+            margin-bottom: 1rem;
+
+            img {
+
+                height: 235px;
+                border-radius: 20px;
+                width: 100%;
+                object-fit: cover;
+
             }
         }
-        box-shadow: 0px 0px 34px 0px #00000033; background-color: #FFF; border-radius: 20px; padding: 1rem; min-height: 300px; 
-        
-        .h-m-s-b-heading{
-            color: #000; font-size: 20px; line-height: 30px; 
+
+        box-shadow: 0px 0px 34px 0px #00000033;
+        background-color: #FFF;
+        border-radius: 20px;
+        padding: 1rem;
+        min-height: 520px;
+
+        .h-m-s-b-heading {
+            color: #000;
+            font-size: 20px;
+            line-height: 30px;
         }
-        
-        .h-m-s-b-line{ height: 5px; background-color: #E3B316; width: 30%; border-radius: 10px; max-width: 100%; margin: 1rem auto; 
- }
-        
-        .h-m-s-b-para{ margin-top: 0.25rem; 
-            p{
-             font-weight: 400; font-size: 15px; line-height: 21px; color: #4b4b4b;    
+
+        .h-m-s-b-line {
+            height: 5px;
+            background-color: #E3B316;
+            width: 30%;
+            border-radius: 10px;
+            max-width: 100%;
+            margin: 1rem auto;
+        }
+
+        .h-m-s-b-para {
+            margin-top: 0.25rem;
+            font-weight: 400;
+                font-size: 15px;
+                line-height: 21px;
+                color: #4b4b4b;
+
+            p {
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 21px;
+                color: #4b4b4b;
             }
         }
-        
+
     }
 
 }
 
-#home_by-director{
-    .h-d-h-m{
-        @include heading-min; 
+#home_by-director {
+    .h-d-h-m {
+        @include heading-min;
     }
-    .h-d-h{
-        @include heading-h1; 
+
+    .h-d-h {
+        @include heading-h1;
     }
-    .h-d-para{
-        @include para; 
+
+    .h-d-para {
+        @include para;
     }
-    .h-d-line{
-       @include gray-line; 
+
+    .h-d-line {
+        @include gray-line;
     }
-    .h-d-name{
+
+    .h-d-name {
         font-family: Poppins;
         font-weight: 600;
         font-size: 17px;
@@ -205,7 +276,8 @@ body {
         letter-spacing: 0%;
 
     }
-    .h-d-pos{
+
+    .h-d-pos {
         font-family: Poppins;
         font-weight: 400;
         font-size: 17px;
@@ -217,19 +289,31 @@ body {
     }
 }
 
-#home_contact-us{
-    margin-top: 3rem; 
-    
-    .h-c-h-sub{
-        h3{
-             font-family: Poppins;
-        font-weight: 300;
-        font-size: 32px;
-        line-height: 48px;
-        letter-spacing: 0.45rem;
-        text-align: center;
-        color : $base-color; 
+#home_contact-us {
+    margin-top: 3rem;
+
+    .h-c-h-sub {
+        h3 {
+            font-family: Poppins;
+            font-weight: 300;
+            font-size: 32px;
+            line-height: 48px;
+            letter-spacing: 0.45rem;
+            text-align: center;
+            color: $base-color;
         }
     }
 }
 
+body::-webkit-scrollbar {
+  width: 0.75em;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: $base-color;
+  outline: 1px solid #FFF;
+}
