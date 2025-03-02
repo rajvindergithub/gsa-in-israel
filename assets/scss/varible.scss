@@ -24,3 +24,38 @@ $yellow-color: #E3B316;
 .p-60{ padding: 60px }
 .p-70{ padding: 70px }
 .p-80{ padding: 80px }
+
+.mtb-10{ margin: 10px 0px; }
+.mtb-20{ margin: 20px 0px; }
+.mtb-30{ margin: 30px 0px; }
+.mtb-40{ margin: 40px 0px; }
+.mtb-50{ margin: 50px 0px; }
+.mtb-60{ margin: 60px 0px; }
+.mtb-70{ margin: 70px 0px; }
+
+@mixin heading-min{
+     color: $base-color;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.2rem;
+        margin-bottom: 0.75rem;
+}
+
+@mixin heading-h1{
+        font-family: 'Poppins', sans-serif;
+            font-size: 48px;
+            line-height: 53px;
+            font-weight: 300;
+            margin-bottom: 2.5rem;
+}
+
+@mixin para{
+        font-size: 17px;
+        line-height: 26px;
+        color: $text-color;
+        font-weight: 300; 
+}
+
+@mixin gray-line{
+     background-color: #B6C0CE;; width: 100%; height: 1px; 
+}

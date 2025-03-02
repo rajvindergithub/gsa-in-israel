@@ -109,16 +109,18 @@ get_header(); ?>
         <div class="row">
             <div class="col-md-6">img</div>
             <div class="col-md-6">
-                <div class="h-d-h-m">by Director</div>
-                <div class="h-d-h">PERSONNEL AND <span>PREMISES</span></div>
+                <div class="h-d-h-m fw-400 t-upper">by Director</div>
+                <div class="h-d-h t-upper fw-300">PERSONNEL AND <span class="fw-600">PREMISES</span></div>
                 <div class="h-d-para">
                     <p>Our goals have been achieved through the dedication of our highly qualified staff experienced in boosting collaboration between tour operators, travel agencies and our representative Airlines.</p>
                     <p>Our goals have been achieved through the dedication of our highly qualified staff experienced in boosting collaboration between tour operators, travel agencies and our representative Airlines.</p>
                     <p>Our goals have been achieved through the dedication of our highly qualified staff experienced in boosting collaboration between tour operators, travel agencies and our representative Airlines.</p>
                 </div>
-                <div class="h-d-line">&nbsp;</div>
-                <div class="h-d-sign"></div>
-                <div class="h-d-name"></div>
+                <div class="h-d-line mtb-30">&nbsp;</div>
+                <div class="h-d-sign mtb-10">
+                    <img src="<?php echo THEME_PATH; ?>/assets/images/signature.png" alt="Signature" title="Signature" />
+                </div>
+                <div class="h-d-name">Fabian Savir</div>
                 <div class="h-d-pos">Managing Director | GSA AIRLINES Israel</div>
             </div>
         </div>
@@ -126,6 +128,26 @@ get_header(); ?>
 </section>
 <!-- home_by-director -->
 
+
+<section id="home_contact-us">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="h-c-heading t-center mtb-30">
+                    <img src="<?php echo THEME_PATH; ?>/assets/images/contact_heading.png" alt="Contact US" title="Contact US" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="h-c-h-sub t-upper">
+                    <h3>we will contact you as soon as possible.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- home_contact-us -->
 
 <section id="home_about-us">
     <div class="container">

@@ -57,19 +57,13 @@ body {
 #home_about-us {
 
     .h-a-us-para {
-        font-size: 17px;
-        line-height: 26px;
-        color: $text-color;
+        @include para; 
     }
 
     padding: 5rem 0rem;
 
     .h-a-us-m-h {
-        color: $base-color;
-        font-size: 20px;
-        line-height: 30px;
-        letter-spacing: 0.2rem;
-        margin-bottom: 0.75rem;
+       @include heading-min; 
     }
 
     .h-a-us-h {
@@ -77,11 +71,7 @@ body {
 
 
         h1 {
-            font-family: 'Poppins', sans-serif;
-            font-size: 48px;
-            line-height: 53px;
-            font-weight: 300;
-            margin-bottom: 2.5rem;
+            @include heading-h1; 
         }
     }
 }
@@ -193,3 +183,53 @@ body {
     }
 
 }
+
+#home_by-director{
+    .h-d-h-m{
+        @include heading-min; 
+    }
+    .h-d-h{
+        @include heading-h1; 
+    }
+    .h-d-para{
+        @include para; 
+    }
+    .h-d-line{
+       @include gray-line; 
+    }
+    .h-d-name{
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 27px;
+        letter-spacing: 0%;
+
+    }
+    .h-d-pos{
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 27px;
+        letter-spacing: 0%;
+        color: #031837;
+
+
+    }
+}
+
+#home_contact-us{
+    margin-top: 3rem; 
+    
+    .h-c-h-sub{
+        h3{
+             font-family: Poppins;
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 48px;
+        letter-spacing: 0.45rem;
+        text-align: center;
+        color : $base-color; 
+        }
+    }
+}
+

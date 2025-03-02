@@ -56,6 +56,27 @@
 .p-80 {
   padding: 80px; }
 
+.mtb-10 {
+  margin: 10px 0px; }
+
+.mtb-20 {
+  margin: 20px 0px; }
+
+.mtb-30 {
+  margin: 30px 0px; }
+
+.mtb-40 {
+  margin: 40px 0px; }
+
+.mtb-50 {
+  margin: 50px 0px; }
+
+.mtb-60 {
+  margin: 60px 0px; }
+
+.mtb-70 {
+  margin: 70px 0px; }
+
 /* Reset some default styles */
 * {
   margin: 0;
@@ -104,7 +125,8 @@ body {
   #home_about-us .h-a-us-para {
     font-size: 17px;
     line-height: 26px;
-    color: #4B4B4B; }
+    color: #4B4B4B;
+    font-weight: 300; }
   #home_about-us .h-a-us-m-h {
     color: #18417C;
     font-size: 20px;
@@ -204,5 +226,51 @@ body {
         font-size: 15px;
         line-height: 21px;
         color: #4b4b4b; }
+
+#home_by-director .h-d-h-m {
+  color: #18417C;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.2rem;
+  margin-bottom: 0.75rem; }
+#home_by-director .h-d-h {
+  font-family: 'Poppins', sans-serif;
+  font-size: 48px;
+  line-height: 53px;
+  font-weight: 300;
+  margin-bottom: 2.5rem; }
+#home_by-director .h-d-para {
+  font-size: 17px;
+  line-height: 26px;
+  color: #4B4B4B;
+  font-weight: 300; }
+#home_by-director .h-d-line {
+  background-color: #B6C0CE;
+  width: 100%;
+  height: 1px; }
+#home_by-director .h-d-name {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 27px;
+  letter-spacing: 0%; }
+#home_by-director .h-d-pos {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 27px;
+  letter-spacing: 0%;
+  color: #031837; }
+
+#home_contact-us {
+  margin-top: 3rem; }
+  #home_contact-us .h-c-h-sub h3 {
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 0.45rem;
+    text-align: center;
+    color: #18417C; }
 
 /*# sourceMappingURL=style.css.map */
